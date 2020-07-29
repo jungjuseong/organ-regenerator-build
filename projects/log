@@ -1,0 +1,2 @@
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake
+powershell.exe -Command cmd /c "C:\cura-build-src\scripts\python3.7\windows\build_in_docker.cmd" 
