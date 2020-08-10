@@ -8,7 +8,7 @@ cpack_add_component(_cura
 # CPack Common Settings
 # ========================================
 set(CPACK_PACKAGE_NAME "Organ Regenerator")
-set(CPACK_PACKAGE_VENDOR "Rokit Healthcare B.V.")
+set(CPACK_PACKAGE_VENDOR "Rokit Healthcare")
 set(CPACK_PACKAGE_HOMEPAGE_URL "https://github.com/jungjuseong/RokitCura")
 
 # MSI only supports version format like "x.x.x.x" where x is an integer from 0 to 65534

@@ -148,7 +148,7 @@ executables = [
 setup(
     name = "Organ Regenerator",
     version = "@CURA_MAJOR_VERSION@.@CURA_MINOR_VERSION@.@CURA_PATCH_VERSION@",
-    author = "Rokit Healthcare B.V.",
+    author = "Rokit Healthcare",
     url="http://software.rokithealthcare.com/",
     description = "3D Slicer Software",
     license="GNU LESSER GENERAL PUBLIC LICENSE (LGPL)",
