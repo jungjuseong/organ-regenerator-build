@@ -1,4 +1,4 @@
-# Rokit cura-build
+# organ-regenerator-build
 
 This repository contains build scripts used to build Cura and all dependencies from scratch.
 
@@ -9,7 +9,7 @@ haven't thought of.
 
 # modified part
 
-docket에 cura-build-output folder기 2개가 존재함
+docker image에 cura-build-output folder기 2개가 존재함
 회피 방법으로 cura-build-output-0로 설정해서 빌드 시도함
 
 

@@ -23,7 +23,7 @@ if(CPACK_GENERATOR MATCHES "WIX")
     set(CURA_FULL_VERSION "${CURA_FULL_VERSION}.${CURA_VERSION_PATCH}")
 endif()
 
-set(CPACK_PACKAGE_ICON "${CMAKE_SOURCE_DIR}/packaging/cura.ico")
+set(CPACK_PACKAGE_ICON "${CMAKE_SOURCE_DIR}/packaging/rokit.ico")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Organ Regenerator - 3D Bio Printing Software")
 set(CPACK_PACKAGE_CONTACT "IRON <jungjuseong@gmail.com>")
 set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/packaging/cura_license.txt")

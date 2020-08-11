@@ -174,12 +174,12 @@ executables = [
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",
                base="Win32GUI",
                targetName = "Cura.exe",
-               icon="@CMAKE_SOURCE_DIR@/packaging/cura.ico"
+               icon="@CMAKE_SOURCE_DIR@/packaging/rokit.ico"
                ),
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",
                base="Console",
                targetName = "CuraCLI.exe",
-               icon="@CMAKE_SOURCE_DIR@/packaging/cura.ico"
+               icon="@CMAKE_SOURCE_DIR@/packaging/rokit.ico"
                ),
     
 ]
@@ -190,7 +190,7 @@ setup(
     description = "Organ Regenerator",
     long_description = "Organ Regenerator - 3D Printing Software",
     author = "Rokit Healthcare",
-    url = "http://software.http://rokithealthcare.com/",
+    url = "http://software.rokithealthcare.com/",
     license = "GNU LESSER GENERAL PUBLIC LICENSE (LGPL)",
 
     options = {"build_exe": build_options},

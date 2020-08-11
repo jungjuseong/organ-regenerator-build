@@ -5,15 +5,15 @@
     <key>CFBundleIdentifier</key>
     <string>nl.ultimaker.cura</string>
     <key>CFBundleName</key>
-    <string>RokitBio Cura</string>
+    <string>Oragan Regenerator</string>
     <key>CFBundleDisplayName</key>
-    <string>RokitBio Cura</string>
+    <string>Oragan Regenerator</string>
     <key>CFBundleVersion</key>
     <string>@CURA_VERSION@</string>
     <key>CFBundleDevelopmentRegion</key>
     <string>English</string>
     <key>CFBundleExecutable</key>
-    <string>cura</string>
+    <string>Oragan Regenerator</string>
     <key>CFBundleIconFile</key>
     <string>icon.icns</string>
     <key>CFBundleInfoDictionaryVersion</key>

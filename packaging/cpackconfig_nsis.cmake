@@ -11,9 +11,9 @@ cpack_add_component(arduino DISPLAY_NAME "Arduino Drivers")
 # ========================================
 set(CPACK_NSIS_ENABLE_UNINSTALL_BEFORE_INSTALL ON)
 set(CPACK_NSIS_EXECUTABLES_DIRECTORY ".")
-set(CPACK_NSIS_INSTALLED_ICON_NAME "Cura.ico")
-set(CPACK_NSIS_MUI_ICON ${CMAKE_SOURCE_DIR}\\\\packaging\\\\cura.ico)   # note: fails with forward '/'
-set(CPACK_PACKAGE_ICON ${CMAKE_SOURCE_DIR}\\\\packaging\\\\cura.ico)
+set(CPACK_NSIS_INSTALLED_ICON_NAME "rokit.ico")
+set(CPACK_NSIS_MUI_ICON ${CMAKE_SOURCE_DIR}\\\\packaging\\\\rokit.ico)   # note: fails with forward '/'
+set(CPACK_PACKAGE_ICON ${CMAKE_SOURCE_DIR}\\\\packaging\\\\rokit.ico)
 
 set(CPACK_NSIS_MENU_LINKS
     "https://ultimaker.com/en/support/software" "Online Documentation"

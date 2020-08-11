@@ -43,10 +43,10 @@ if(EXISTS ${WINDOWS_IDENTITIY_PFX_FILE})
     # Signing the installer
     add_custom_target(signing-installer) # Sadly "TARGET package POST_BUILD" can't be used in the following add_custom_command()
     if(${BUILD_OS_WIN32})
-        set(CURA_INSTALLER_NAME ${CPACK_NSIS_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${CPACK_SYSTEM_NAME}.exe)
+        set(CURA_INSTALLER_NAME ${CPACK_NSIS_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}.exe)
     else()
         # TODO: Verify whether ${CPACK_SYSTEM_NAME} is "win64", when doing 64bit builds.
-        set(CURA_INSTALLER_NAME ${CPACK_NSIS_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-win64.exe)
+        set(CURA_INSTALLER_NAME ${CPACK_NSIS_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}.exe)
     endif()
     add_custom_command(
         TARGET signing-installer

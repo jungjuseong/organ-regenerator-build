@@ -95,7 +95,7 @@ setup(
     name = "Organ Regenerator",
     version = "@CURA_VERSION_MAJOR@.@CURA_VERSION_MINOR@.@CURA_VERSION_PATCH@",
     description = "3D Printing Software",
-    author = "Rokit Healthcare B.V.",
+    author = "Rokit Healthcare",
     url = "http://software.ultimaker.com/",
     license = "GNU LESSER GENERAL PUBLIC LICENSE (LGPL)",
 
