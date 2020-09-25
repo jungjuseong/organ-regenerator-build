@@ -173,7 +173,7 @@ build_options = {
 executables = [
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",
                base="Win32GUI",
-               targetName = "Cura.exe",
+               targetName = "OrganRegnerator.exe",
                icon="@CMAKE_SOURCE_DIR@/packaging/rokit.ico"
                ),
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",

@@ -1,4 +1,4 @@
-# Signing the Installer and Cura.exe with "signtool.exe"
+# Signing the Installer and OrganRegnerator.exe with "signtool.exe"
 # Location on my desktop:
 # -> C:\Program Files (x86)\Windows Kits\10\bin\x86\signtool.exe
 # * Manual: https://msdn.microsoft.com/de-de/library/8s9b9yaz(v=vs.110).aspx
@@ -22,10 +22,10 @@ if(EXISTS ${WINDOWS_IDENTITIY_PFX_FILE})
         message(WARNING "USE WITH CAUTION: Password for the PFX file has been set!")
     endif()
     
-    # Signing Cura.exe
+    # Signing OrganRegnerator.exe
     add_custom_command(
         TARGET signing PRE_BUILD
-        COMMAND ${SIGNTOOL_EXECUTABLE} sign ${signtool_OPTIONS} Cura.exe
+        COMMAND ${SIGNTOOL_EXECUTABLE} sign ${signtool_OPTIONS} OrganRegnerator.exe
         ## Other optional options:
         # /tr timestampServerUrl 
         WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/package

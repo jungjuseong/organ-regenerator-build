@@ -7,7 +7,7 @@ param (
 # Branch parameters
   [string]$CuraBranchOrTag = "4.6",
   [string]$UraniumBranchOrTag = "4.6",
-  [string]$CuraEngineBranchOrTag = "4.6",
+  [string]$CuraEngineBranchOrTag = "master",
   [string]$CuraBinaryDataBranchOrTag = "master",
   [string]$FdmMaterialsBranchOrTag = "4.6",
   [string]$LibCharonBranchOrTag = "4.6",

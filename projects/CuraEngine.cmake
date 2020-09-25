@@ -18,7 +18,7 @@ elseif (BUILD_OS_OSX)
 endif()
 
 ExternalProject_Add(CuraEngine
-    GIT_REPOSITORY https://github.com/ultimaker/CuraEngine
+    GIT_REPOSITORY https://github.com/jungjuseong/RokitEngine
     GIT_TAG origin/${CURAENGINE_BRANCH_OR_TAG}
     GIT_SHALLOW 1
     STEP_TARGETS update

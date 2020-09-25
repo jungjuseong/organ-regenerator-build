@@ -543,52 +543,52 @@ FunctionEnd
 !include "FileAssociation.nsh"
 
 Section /o "Open 3MF files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".3mf" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "3D Manufacturing Format"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".3mf" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "3D Manufacturing Format"
 SectionEnd
 
 Section /o "Open AMF files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".amf" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Additive Manufacturing Format"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".amf" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Additive Manufacturing Format"
 SectionEnd
 
 Section /o "Open CTM files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".ctm" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Open Compressed Triangle Mesh"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".ctm" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Open Compressed Triangle Mesh"
 SectionEnd
 
 Section /o "Open DAE files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".dae" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "COLLADA Digital Asset Exchange"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".dae" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "COLLADA Digital Asset Exchange"
 SectionEnd
 
 Section /o "Open GLB files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".glb" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "glTF Binary"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".glb" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "glTF Binary"
 SectionEnd
 
 Section /o "Open glTF files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".gltf" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "glTF Embedded JSON"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".gltf" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "glTF Embedded JSON"
 SectionEnd
 
 Section /o "Open OBJ files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".obj" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.obj.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Wavefront OBJ"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".obj" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.obj.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Wavefront OBJ"
 SectionEnd
 
 Section /o "Open PLY files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".ply" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.ply.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Stanford Triangle Format"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".ply" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.ply.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Stanford Triangle Format"
 SectionEnd
 
 Section "Open STL files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".stl" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.stl.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Stereolithography Mesh"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".stl" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.stl.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Stereolithography Mesh"
 SectionEnd
 
 Section /o "Open X3D files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".x3d" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.x3d.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "XML-based 3D model"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".x3d" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.x3d.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "XML-based 3D model"
 SectionEnd
 
 Section /o "Open ZAE files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".zae" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Compressed COLLADA Digital Asset Exchange"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".zae" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.3mf.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "Compressed COLLADA Digital Asset Exchange"
 SectionEnd
 
 Section /o "Open GCODE files"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".gcode" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.gcode.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "G-code toolpath"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".g"     "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.g.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@"     "G-code toolpath"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".gcode" "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.gcode.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@" "G-code toolpath"
+    ${RegisterExtension} "$INSTDIR\OrganRegnerator.exe" ".g"     "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.g.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@"     "G-code toolpath"
 SectionEnd
 
 ;--------------------------------
@@ -926,8 +926,8 @@ Section "Uninstall"
   ${UnRegisterExtension} ".g"     "@CPACK_PACKAGE_NAME_NO_WHITESPACES@.g.@CPACK_PACKAGE_VERSION_MAJOR@.@CPACK_PACKAGE_VERSION_MINOR@"
 
   ;Remove executable from MuiCache
-  DeleteRegKey HKCR "Local Settings\Software\Microsoft\Windows\Shell\MuiCache\$INSTDIR\Cura.exe.ApplicationCompany"
-  DeleteRegKey HKCR "Local Settings\Software\Microsoft\Windows\Shell\MuiCache\$INSTDIR\Cura.exe.FriendlyAppName"
+  DeleteRegKey HKCR "Local Settings\Software\Microsoft\Windows\Shell\MuiCache\$INSTDIR\OrganRegnerator.exe.ApplicationCompany"
+  DeleteRegKey HKCR "Local Settings\Software\Microsoft\Windows\Shell\MuiCache\$INSTDIR\OrganRegnerator.exe.FriendlyAppName"
 
   ;Remove the uninstaller itself.
   Delete "$INSTDIR\Uninstall.exe"
