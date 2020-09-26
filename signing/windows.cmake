@@ -31,10 +31,10 @@ if(EXISTS ${WINDOWS_IDENTITIY_PFX_FILE})
         WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/package
     )
 
-    # Signing CuraEngine.exe
+    # Signing OrganRgenEngine.exe
     add_custom_command(
         TARGET signing PRE_BUILD
-        COMMAND ${SIGNTOOL_EXECUTABLE} sign ${signtool_OPTIONS} CuraEngine.exe
+        COMMAND ${SIGNTOOL_EXECUTABLE} sign ${signtool_OPTIONS} OrganRgenEngine.exe
         ## Other optional options:
         # /tr timestampServerUrl 
         WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/package

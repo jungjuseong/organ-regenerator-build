@@ -17,9 +17,9 @@ elseif (BUILD_OS_OSX)
     endif()
 endif()
 
-ExternalProject_Add(CuraEngine
+ExternalProject_Add(OrganRegenEngine
     GIT_REPOSITORY https://github.com/jungjuseong/RokitEngine
-    GIT_TAG origin/${CURAENGINE_BRANCH_OR_TAG}
+    GIT_TAG origin/${ORGANREGEN_ENGINE_BRANCH_OR_TAG}
     GIT_SHALLOW 1
     STEP_TARGETS update
     CMAKE_GENERATOR "${cmake_generator}"
@@ -27,11 +27,11 @@ ExternalProject_Add(CuraEngine
                -DCMAKE_INSTALL_PREFIX=${EXTERNALPROJECT_INSTALL_PREFIX}
                -DCMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}
                -DCURA_ENGINE_VERSION=${CURA_VERSION}
-               -DENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS=${CURAENGINE_ENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS}
+               -DENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS=${ORGANREGEN_ENGINE_ENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS}
                -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
                ${extra_cmake_args}
 )
 
-SetProjectDependencies(TARGET CuraEngine)
+SetProjectDependencies(TARGET OrganRegenEngine)
 
-add_dependencies(update CuraEngine-update)
+add_dependencies(update OrganRegenEngine-update)

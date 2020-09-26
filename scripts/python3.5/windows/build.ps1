@@ -7,7 +7,7 @@ param (
 # Branch parameters
   [string]$CuraBranchOrTag = "4.6",
   [string]$UraniumBranchOrTag = "4.6",
-  [string]$CuraEngineBranchOrTag = "master",
+  [string]$OrganRegenEngineBranchOrTag = "master",
   [string]$CuraBinaryDataBranchOrTag = "master",
   [string]$FdmMaterialsBranchOrTag = "4.6",
   [string]$LibCharonBranchOrTag = "4.6",
@@ -26,7 +26,7 @@ param (
   [int32]$ApiVersion = 1,
 
   [boolean]$EnableDebugMode = $true,
-  [boolean]$EnableCuraEngineExtraOptimizationFlags = $true,
+  [boolean]$EnableOrganRegenEngineExtraOptimizationFlags = $true,
 
   [string]$CuraWindowsInstallerType = "EXE",
 
@@ -54,9 +54,9 @@ if ($EnableDebugMode) {
   $CURA_DEBUG_MODE = "ON"
 }
 
-$CURAENGINE_ENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS = "OFF"
-if ($EnableCuraEngineExtraOptimizationFlags) {
-  $CURAENGINE_ENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS = "ON"
+$ORGANREGEN_ENGINE_ENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS = "OFF"
+if ($EnableOrganRegenEngineExtraOptimizationFlags) {
+  $ORGANREGEN_ENGINE_ENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS = "ON"
 }
 
 $CPACK_GENERATOR = "NSIS"
@@ -84,7 +84,7 @@ if ($BindSshVolume) {
   --env CURA_BUILD_OUTPUT_PATH=C:\cura-build-output `
   --env CURA_BRANCH_OR_TAG=$CuraBranchOrTag `
   --env URANIUM_BRANCH_OR_TAG=$UraniumBranchOrTag `
-  --env CURAENGINE_BRANCH_OR_TAG=$CuraEngineBranchOrTag `
+  --env ORGANREGEN_ENGINE_BRANCH_OR_TAG=$OrganRegenEngineBranchOrTag `
   --env CURABINARYDATA_BRANCH_OR_TAG=$CuraBinaryDataBranchOrTag `
   --env FDMMATERIALS_BRANCH_OR_TAG=$FdmMaterialsBranchOrTag `
   --env LIBCHARON_BRANCH_OR_TAG=$LibCharonBranchOrTag `
@@ -98,7 +98,7 @@ if ($BindSshVolume) {
   --env CURA_CLOUD_API_VERSION=$ApiVersion `
   --env CURA_CLOUD_ACCOUNT_API_ROOT=$AccountApiRoot `
   --env CURA_DEBUG_MODE=$CURA_DEBUG_MODE `
-  --env CURAENGINE_ENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS=$CURAENGINE_ENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS `
+  --env ORGANREGEN_ENGINE_ENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS=$ORGANREGEN_ENGINE_ENABLE_MORE_COMPILER_OPTIMIZATION_FLAGS `
   --env CPACK_GENERATOR=$CPACK_GENERATOR `
   --env CURA_MSI_PRODUCT_GUID=$CuraMsiProductGuid `
   --env CURA_MSI_UPGRADE_GUID=$CuraMsiUpgradeGuid `

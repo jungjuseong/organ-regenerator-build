@@ -67,7 +67,7 @@ build_options = {
         "logging.handlers",
     ],
     "include_files": [
-        ("@EXTERNALPROJECT_INSTALL_PREFIX@/bin/CuraEngine", ""),
+        ("@EXTERNALPROJECT_INSTALL_PREFIX@/bin/OrganRegenEngine", ""),
         ("@EXTERNALPROJECT_INSTALL_PREFIX@/lib/cura", "plugins"),
         ("@EXTERNALPROJECT_INSTALL_PREFIX@/lib/uranium", "plugins"),
         (os.path.join(python_externalproject_dir, "UM/Qt/qml/UM"), "qml/UM"),
