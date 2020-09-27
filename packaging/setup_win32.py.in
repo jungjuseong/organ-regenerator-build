@@ -178,7 +178,7 @@ executables = [
                ),
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",
                base="Console",
-               targetName = "CuraCLI.exe",
+               targetName = "OrganRegenCLI.exe",
                icon="@CMAKE_SOURCE_DIR@/packaging/rokit.ico"
                ),
     
